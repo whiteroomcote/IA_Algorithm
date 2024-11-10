@@ -1,15 +1,17 @@
-from openai import OpenAI
 import openai
-client = OpenAI()
-openai.api_key= "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"
 
-completion = client.chat.completions.create(
+openai.api_key= "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"
+
+response = completion = openai.ChatCompletion.create(
     model="gpt-3.5-turbo",
     messages=[
         {
             "role": "user",
-         "content": "write a haiku about ai"
+         "content": "write a haiku about ai",
+         
          }
-
-    ]
+    ],
+        max_tokens = 100
 )
+
+print(response)
