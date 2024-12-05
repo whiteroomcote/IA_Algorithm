@@ -1,11 +1,13 @@
-import torch   
+import torch
 
-data = [1,2,3,4,5]
+x = torch.rand(2,2)
 
-tensor = torch.tensor(data)
+y = torch.rand (2,2)
 
-print(tensor)
+print (x)
 
-print(f"Tensor shape : {tensor.shape}")
+print ( y)
 
-print(f"Tensor data type : {tensor.dtype}")
+z = x+y
+
+print(z)
