@@ -1,13 +1,13 @@
 import torch
 
-x = torch.rand(2,2)
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as pt
 
-y = torch.rand (2,2)
+#print(torch.__version__)
 
-print (x)
+scalar = torch.tensor(7)
 
-print ( y)
+#print(scalar)
 
-z = x+y
-
-print(z)
+print(scalar.ndim)
